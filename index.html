@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Task List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-success p-4 ">
+            <div class="col-md text-white task-style_1">
+                <h3>Task List</h3>
+                <form id="add_task_form">
+                    <input class="" type="text" id="new_task" placeholder="New Task" autofocus>
+                    <input type="submit" class="py-1 btn btn-primary" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row bg-primary p-4 border ">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-2">
+                        <h2 class="text-white">All Task</h2>
+                    </div>
+                    <div class="col-3 mt-2">
+                        <input type="text" id="filter_task" placeholder="Filter Task">
+                    </div>
+                    <div class="col-7 mt-1">
+                        <button class=" btn btn-secondary" id="clear_task">Clear All Task</button>
+                    </div>
+                    
+                    <ul style="background: cornflowerblue;color: white;" id="all_task">
+                        <!--here all task will be added after submit-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
